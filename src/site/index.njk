@@ -5,84 +5,106 @@ layout: layouts/base.njk
 templateEngineOverride: njk, md
 ---
 
-{% render '@vf-intro', {"vf_intro_phase": "alpha", "vf_intro_heading": siteConfig.siteInformation.title,
-  "vf_intro_lede": siteConfig.siteInformation.short_description,
-  "vf_intro_text": [
-    "☝️ that also means dynamic building of just the CSS and JS you need."
-  ]
-} %}
 
-<section class="embl-grid embl-grid--has-centered-content">
+<section class="vf-intro | embl-grid embl-grid--has-centered-content">
   <div>
     <!-- empty -->
   </div>
-  <div class="vf-content">
-  {% markdown %}
-
-  ## Quickstart
-
-  ```
-
-      yarn create @visual-framework/vf-eleventy your-new-site-name embl-eleventy   
-
-  ```
-
-  This will install a new [`embl-eleventy`](https://github.com/embl-communications/embl-eleventy/) to a folder named `your-new-site-name`.
-
-  Then follow the onscreen prompts and links below to develop and configure.
-
-  ## Longer install?
-
-  The above too easy or have questions? [Read this guide](https://github.com/visual-framework/vf-eleventy#1-creating-a-new-project-powered-by-vf-eleventy).
-
-  {% endmarkdown %}
-
+  <div>
+    <h1 class="vf-intro__heading vf-intro__heading--has-tag">EMBL and industry <a href="JavaScript:Void(0);"
+        class="vf-badge vf-badge--primary vf-badge--phases">beta</a></h1>
+    <p class="vf-lede">EMBL research has many practical and industrial applications</p>
+    <p class="vf-intro__text">We should talk.</p>
+    <p class="vf-intro__text">EMBL’s talent pool of thousands of scientists and engineers can provide insight and expertise for your specific scientific challenges.</p>
   </div>
 </section>
-
-
-<section class="vf-intro | embl-grid embl-grid--has-centered-content">
-
-<div>
-  <!-- empty -->
-</div>
-<div class="vf-content">
-
-## What you get
-
-- the Eleventy static site generator
-- access to the Visual Framework component system
-
-### Component installation
-
-To add a component you can use npm/Yarn or install it manually.
-
-In either case you'll need to re-run `gulp dev` to ensure the component is fully loaded.
-
-- installation: `yarn add @visual-framework/embl-logo`
-- updating: `yarn upgrade-interactive --latest`
-
-### Manual installation for customisation
-
-1. Download a pattern
-2. Copy it to `./src/components/vf-component-name`
-
-### Add your own local component
-
-You can add a custom VF-compatible component to `./src/components` and use it in
-your site.
-
-- `gulp vf-component`
-
-You'll find a `vf-sample` component there, we've used it below:
-
-<div class="vf-box">
-{% verbatim %}
-Code: {% render "@vf-sample", {text: "with some text"} %}
-{% endverbatim %}
-
-Returns: {% render "@vf-sample", {text: "with some text"} %}
-</div>
-
-</div>
+<section class="embl-grid embl-grid--has-centered-content">
+  <div>
+    <h2 class="vf-summary__title">EMBLEM</h2>
+  </div>
+  <div>
+    <p class="vf-summary__text">EMBL Enterprise Management Technology Transfer GmbH (EMBLEM) is an
+      affiliate
+      and the commercial arm of the EMBL. EMBLEM, established in 1999 identifies, protects and commercialises the
+      intellectual property developed in the EMBL-world, from EMBL-alumni and from non-EMBL third parties. EMBLEM
+      facilitates and accelerates the transfer of innovative technology from basic research to industry by working
+      closely
+      with industrial partners spanning the biotech, IT and mechanical/electrical engineering markets.</p>
+    <p class="vf-summary__text">EMBLEM currently manages a portfolio of close to 300 individual patents,
+      patent applications, copyrights, trademarks
+      and utility models. The technology portfolio spans the life sciences in the broadest sense and includes enabling
+      technologies, molecular tools and techniques, instruments as well as software programmes and databases.
+    </p>
+    <a id="harsh" href="#" class="vf-link ">Link to EMBLEM website</a>
+  </div>
 </section>
+<hr class="vf-divider">
+<section class="embl-grid embl-grid--has-centered-content">
+  <div>
+    <h2 class="vf-summary__title">EMBL Ventures</h2>
+  </div>
+  <div>
+    <p class="vf-summary__text">We invest in start-ups to later stage companies.</p>
+    <p class="vf-summary__text">Based in Heidelberg, we invest throughout Europe with the aim to build
+      companies that create significant commercial opportunities based on new therapeutic treatment modalities and
+      pharmaceuticals, next generation enabling technology platforms or innovations in the diagnostics and medical
+      device area. As an independent and focused team we move quickly with short decision timelines.
+    </p>
+    <a id="harsh" href="#" class="vf-link ">Link to EMBL Ventures website</a>
+  </div>
+</section>
+<hr class="vf-divider">
+<section class="embl-grid embl-grid--has-centered-content">
+  <div>
+    <h2 class="vf-summary__title">EMBL-EBI Industry Programme</h2>
+  </div>
+  <div>
+    <p class="vf-summary__text">The EMBL-EBI Industry Programme has been an important and vibrant part of
+      EMBL-EBI since 1996, providing regular contact and interaction with key stakeholders and opinion leaders at major
+      global commercial companies and informing them of the institute’s future directions.</p>
+    <p class="vf-summary__text">EMBLEM currently manages a portfolio of close to 300 individual patents,
+      patent applications, copyrights, trademarks
+      and utility models. The technology portfolio spans the life sciences in the broadest sense and includes enabling
+      technologies, molecular tools and techniques, instruments as well as software programmes and databases.
+    </p>
+    <a id="harsh" href="#" class="vf-link ">Link to EMBL-EBI Industry Programme</a>
+  </div>
+</section>
+<hr class="vf-divider">
+<section class="embl-grid embl-grid--has-centered-content">
+  <div>
+    <h2 class="vf-summary__title">EMBL Corporate Partnership Programme</h2>
+  </div>
+  <div>
+    <p class="vf-summary__text">Founded in 2009, the Corporate Partnership Programme connects interested
+      organisations with the latest developments in the molecular life sciences and the world’s leading molecular
+      biology researchers.</p>
+    <p class="vf-summary__text">The EMBL-EBI Industry Programme is a subscription-based programme for
+      global companies that make significant use of the data and resources provided by EMBL-EBI as a core part of their
+      R&D. Member companies represent most of the top 20 pharmaceutical companies as well as several major agri-food,
+      nutrition and healthcare companies.
+    </p>
+    <p class="vf-summary__text">The Programme is designed to create and enhance long-term, effective
+      relationships between EMBL and top-class corporate partners. It provides opportunities for partners to draw on
+      EMBL’s excellent track record of collaborations with industry for the co-development of training, products and
+      services, as well as in the broader sector of technology transfer.
+    </p>
+    <p class="vf-summary__text">Thanks to the generous support of its corporate partners, EMBL can bring
+      talented young scientists to its world-class scientific gatherings, where they contribute to and participate in
+      advanced scientific training. Through this Programme, EMBL and its corporate partners support the development and
+      promotion of innovative and ground-breaking scientific events in Europe.
+    </p>
+    <a id="harsh" href="#" class="vf-link ">Link to EMBL Corporate Partnership Programme
+    </a>
+  </div>
+</section>
+<hr class="vf-divider">
+<section class="embl-grid embl-grid--has-centered-content">
+  <div>
+    <h2 class="vf-summary__title">Industry news</h2>
+  </div>
+  <div>
+    <link rel="import"
+      href="https://dev.content.embl.org/api/v1/pattern.html?filter-content-type=article&filter-field-value%5Bfield_article_type%5D=article_timely&filter-fields-exists=field_display_title%2Cfield_teaser%2Cfield_canonical_location&limit=2&pattern=vf-news-item-default&sort-field-value%5Bcreated%5D=DESC"
+      data-target="self" data-embl-js-content-hub-loader>
+  </div>
